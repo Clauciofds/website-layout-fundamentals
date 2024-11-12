@@ -1,0 +1,38 @@
+/* 
+x => horizontal
+y => vertical
+z => sobrepõe outro elementos
+*/
+
+img {
+  background-position-x: 50px;
+  background-position-y: 50px;
+}
+
+:root {
+  /* first top */
+  --layer-first: 1;
+  --layer-second: 0;
+  --layer-third: -1;
+}
+
+h1 {
+  background-color: blueviolet;
+  position: absolute;
+  z-index: var(--layer-first);
+  padding: 0px;
+}
+
+p.p-absolute {
+  background-color: gray;
+  position: absolute;
+  z-index: var(--layer-second);
+  margin: 10px;
+}
+
+p.p-segundo {
+  background-color: chartreuse;
+  position: absolute;
+  z-index: var(--layer-third);
+  margin: 5px;
+}

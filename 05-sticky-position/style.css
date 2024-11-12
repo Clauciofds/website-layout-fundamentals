@@ -1,0 +1,12 @@
+h1 {
+  background-color: red;
+  position: sticky;
+  top: 0px;
+  left: 50px;
+  width: 100vw;
+}
+
+section {
+  background-color: gray;
+  width: 100vw;
+}
